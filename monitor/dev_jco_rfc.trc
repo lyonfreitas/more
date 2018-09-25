@@ -1,0 +1,7 @@
+
+**** Error file opened at 20180924 211053 Brasilia Time Rel 3.0.11 (2014-04-15) [720.612]
+Error: [2] >Mon Sep 24 21:10:53,376<    RfcException raised by system [EPD|HOECD002SCZ]:
+    message: connection closed without message (CM_NO_DATA_RECEIVED)
+    return code: RFC_CLOSED (6)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION

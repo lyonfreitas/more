@@ -1,0 +1,21 @@
+#.::SETTINGS::.
+#GERAL
+jco.client.lang=pt
+jco.destination.peak_limit=10
+jco.client.passwd=litabap@01
+jco.client.user=abap_ams1
+jco.destination.pool_capacity=3
+#DEV
+jco.client.client=400
+jco.client.sysnr=10
+jco.client.ashost=10.41.15.179
+#QAS
+#jco.client.client=400
+#jco.client.sysnr=00
+#jco.client.ashost=10.101.10.5
+#PRD - Load balancing
+#jco.client.jco.r3name=P01
+#jco.client.mshost=178.15.1.40
+#jco.client.group=PRODUCAO
+#jco.client.msserv=3600
+jco.client.saprouter=/H/200.203.183.135/H/
