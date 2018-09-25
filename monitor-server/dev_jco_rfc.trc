@@ -5,3 +5,13 @@ Error: [2] >Mon Sep 24 21:10:53,376<    RfcException raised by system [EPD|HOECD
     return code: RFC_CLOSED (6)
     error group: 102
     key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20180925 151053 Brasilia Time Rel 3.0.11 (2014-04-15) [720.612]
+Error:  >Tue Sep 25 15:10:53,859<    >RfcGetException rc (7) message: No more storage space available for extending an internal table.
+<RfcGetException
+
+
+**** Error file opened at 20180925 174351 Brasilia Time Rel 3.0.11 (2014-04-15) [720.612]
+Error:  >Tue Sep 25 17:43:51,771<    >RfcGetException rc (7) message: No more storage space available for extending an internal table.
+<RfcGetException
+

@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MesaService } from '../_services/mesa.service';
+import { Observable } from 'rxjs';
+
+import { MatTableDataSource } from '@angular/material';
 
 @Component({
   selector: 'app-mesa',
@@ -7,9 +11,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MesaComponent implements OnInit {
 
-  constructor() { }
+  private otspendentes;
+
+  displayedColumns: string[] = ['tanum', 'matnr', 'maktx', 'volum', 'status'];
+  dataSource: MatTableDataSource<any>;
+
+  constructor(private ms:MesaService) { }
 
   ngOnInit() {
+  	this.dataSource = new MatTableDataSource([]);
+  }
+
+  getInfoMesa(deposito, mesa) {
+  	this.ms.getInfoMesa(deposito, mesa).subscribe(
+  		(data:any) => {
+  			this.otspendentes = data.otspendentes;
+  			this.dataSource.data = data.itens;
+  		},
+  		(errorEvent:ErrorEvent) => {
+  			console.log(errorEvent);
+  		}
+  	);
   }
 
 }
