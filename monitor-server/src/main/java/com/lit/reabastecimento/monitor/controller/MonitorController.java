@@ -24,6 +24,13 @@ public class MonitorController {
 	public MonitorController() throws JCoException {
 		destination = JCoDestinationManager.getDestination("ABAP_AS");
 	}
+	
+	@RequestMapping(value = "/api/material/{ean13}", method = RequestMethod.GET)
+	public ResponseEntity<Mesa> getMaterial(@PathVariable("ean13") String ean13) {
+		Mesa m = new Mesa();
+		m.setOtspendentes(987);
+		return ResponseEntity.ok(m);
+	}
 
 	@RequestMapping(value = "/api/mesa/{lgnum}/{queue}", method = RequestMethod.GET)
 	public ResponseEntity<Mesa> getMesa(@PathVariable("lgnum") String lgnum, @PathVariable("queue") String queue) {
